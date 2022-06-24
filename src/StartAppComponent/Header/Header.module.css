@@ -1,0 +1,24 @@
+
+.title h1 {
+    text-align: center;
+    font-family: 'Rubik One', sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    background: #2E2F45;
+    display: table;
+    margin: 20px auto;
+    color: white;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+}
+
+@media (max-width: 950px) {
+    .title h1 {
+        font-size: 50px;
+    }
+}@media (max-width: 560px) {
+    .title h1 {
+        font-size: 20px;
+    }
+}

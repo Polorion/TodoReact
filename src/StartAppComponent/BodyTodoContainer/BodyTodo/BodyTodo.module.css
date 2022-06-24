@@ -1,0 +1,8 @@
+.body {
+    background: rgb(5,99,119);
+    background: linear-gradient(167deg, rgba(5,99,119,1) 24%, rgba(17,11,24,1) 51%, rgba(9,121,50,1) 87%);
+    border-radius: 20px;
+    box-shadow: 20px 10px 10px black;
+    border: 2px solid black;
+    padding: 30px;
+}
