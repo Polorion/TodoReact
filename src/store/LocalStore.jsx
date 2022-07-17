@@ -1,9 +1,9 @@
 import GeneratorRandomString from "../util/generateRandomString";
 
 export const setTodoItem = (value) => {
-  const localarray = JSON.parse(localStorage.getItem("data"));
-  localarray.unshift(createTodo(value));
-  localStorage.setItem("data", JSON.stringify(localarray));
+  const localArray = JSON.parse(localStorage.getItem("data"));
+  localArray.unshift(createTodo(value));
+  localStorage.setItem("data", JSON.stringify(localArray));
 };
 
 export const deleteTodo = (id) => {
@@ -30,11 +30,18 @@ export const createTodo = (value) => {
     name: value,
     done: false,
     id: GeneratorRandomString(),
+    status:"active",
+    timeCreate: new Date()
   };
 };
 
 export const getItem = () => {
-  console.log(JSON.parse(localStorage.getItem("data")) === null);
+  if (JSON.parse(localStorage.getItem("data")) === null) {
+    localStorage.setItem("data", JSON.stringify([]));
+  }
+  return JSON.parse(localStorage.getItem("data"));
+};
+export const getItemActive = () => {
   if (JSON.parse(localStorage.getItem("data")) === null) {
     localStorage.setItem("data", JSON.stringify([]));
   }

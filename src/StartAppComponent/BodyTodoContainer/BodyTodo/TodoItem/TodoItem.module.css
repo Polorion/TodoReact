@@ -1,10 +1,19 @@
 .body {
   display: flex;
+  position: relative;
   margin-bottom: 30px;
   align-items: center;
   border: 2px solid black;
   justify-content: space-between;
   border-radius: 15px;
+}
+
+.createTime {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 10px;
+  color: #fff;
 }
 .body p {
   font-size: 30px;

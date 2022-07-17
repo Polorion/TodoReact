@@ -23,6 +23,7 @@ const BodyTodoContainer = () => {
     changeTodo(id);
     setData(getItem());
   };
+  console.log(data)
 
   useEffect(() => {}, [data]);
 
