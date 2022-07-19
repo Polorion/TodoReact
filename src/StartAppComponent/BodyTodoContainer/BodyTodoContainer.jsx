@@ -3,12 +3,31 @@ import BodyTodo from "./BodyTodo/BodyTodo";
 import {
   changeTodo,
   deleteTodo,
+  getActiveItem,
   getItem,
-  setTodoItem, test,
+  setTodoItem,
+  test,
 } from "../../store/LocalStore";
 
 const BodyTodoContainer = () => {
   const [data, setData] = useState(getItem());
+
+  const activePost = (value) => {
+    switch (value) {
+      case "0":
+        localStorage.setItem("ActiveTodo", "all");
+        break;
+      case "1":
+        localStorage.setItem("ActiveTodo", "finish");
+
+        break;
+      case "2":
+        localStorage.setItem("ActiveTodo", "active");
+
+        break;
+    }
+    setData(getItem());
+  };
 
   const addTodo = (value) => {
     setTodoItem(value);
@@ -24,14 +43,12 @@ const BodyTodoContainer = () => {
     setData(getItem());
   };
 
-  useEffect(() => {
-
-
-  }, [data]);
+  useEffect(() => {}, [data]);
 
   return (
     <>
       <BodyTodo
+        activePost={activePost}
         addTodo={addTodo}
         dellTodo={dellTodo}
         data={data}

@@ -2,17 +2,15 @@ import GeneratorRandomString from "../util/generateRandomString";
 
 export const setTodoItem = (value) => {
   const localArray = JSON.parse(localStorage.getItem("data"));
-  localArray.forEach(el=>el.anim=false)
+  localArray.forEach((el) => (el.anim = false));
   localArray.unshift(createTodo(value));
   localStorage.setItem("data", JSON.stringify(localArray));
-  setTimeout(()=>{
+  setTimeout(() => {
     const localArray = JSON.parse(localStorage.getItem("data"));
-    localArray.forEach(el=>el.anim=false)
+    localArray.forEach((el) => (el.anim = false));
     localStorage.setItem("data", JSON.stringify(localArray));
-   },300
-  )
+  }, 300);
 };
-
 
 export const deleteTodo = (id) => {
   localStorage.setItem(
@@ -38,9 +36,9 @@ export const createTodo = (value) => {
     name: value,
     done: false,
     id: GeneratorRandomString(),
-    status:"active",
+    status: "active",
     timeCreate: new Date(),
-    anim:true
+    anim: true,
   };
 };
 
@@ -48,20 +46,24 @@ export const getItem = () => {
   if (JSON.parse(localStorage.getItem("data")) === null) {
     localStorage.setItem("data", JSON.stringify([]));
   }
-  return JSON.parse(localStorage.getItem("data"));
-};
-export const getItemActive = () => {
-  if (JSON.parse(localStorage.getItem("data")) === null) {
-    localStorage.setItem("data", JSON.stringify([]));
+  const activePost = localStorage.getItem("ActiveTodo");
+  switch (activePost) {
+    case "finish":
+      return JSON.parse(localStorage.getItem("data")).filter((el) => {
+        if (el.done === true) {
+          return el;
+        }
+      });
+      break;
+    case "active":
+      return JSON.parse(localStorage.getItem("data")).filter((el) => {
+        if (el.done !== true) {
+          return el;
+        }
+      });
+      break;
+    case "all":
+      return JSON.parse(localStorage.getItem("data"));
+      break;
   }
-  return JSON.parse(localStorage.getItem("data"));
 };
-
-
-
-export const test=()=>{
-  const localArray = JSON.parse(localStorage.getItem("data"));
-  alert('dsf')
-  localArray.forEach(el=>el.anim=false)
-  localStorage.setItem("data", JSON.stringify(localArray));
-}

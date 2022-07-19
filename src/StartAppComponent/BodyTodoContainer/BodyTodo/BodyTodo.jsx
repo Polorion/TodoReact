@@ -2,16 +2,14 @@ import React from "react";
 import TodoItem from "./TodoItem/TodoItem";
 import S from "./BodyTodo.module.css";
 import TodoFormControl from "./TodoFormControl/TodoFormControl";
-import TodoSelect from './TodoSelect/TodoSelect'
+import TodoSelect from "./TodoSelect/TodoSelect";
 const BodyTodo = (props) => {
   return (
     <div className={`container  ${S.body}`}>
-      <TodoSelect/>
+      <TodoSelect activePost={props.activePost} />
       <TodoFormControl addTodo={props.addTodo} />
       {props.data &&
         props.data.map((el) => (
-
-
           <TodoItem
             changeDone={props.changeDone}
             key={el.id}

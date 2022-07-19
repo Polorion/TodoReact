@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TodoSelect = () => {
+const TodoSelect = (props) => {
   const [active, setActive] = useState("active");
   const setOprional = (active) => {
     setActive(active);
@@ -11,10 +11,8 @@ const TodoSelect = () => {
         сортировать
         <select
           onChange={(value) => {
-            console.log(value.target.value);
+            props.activePost(value.target.value);
           }}
-          name=""
-          id=""
         >
           <option value="0">все задачи</option>
           <option value="1">выполненные задачи</option>
