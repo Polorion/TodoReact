@@ -46,6 +46,9 @@ export const getItem = () => {
   if (JSON.parse(localStorage.getItem("data")) === null) {
     localStorage.setItem("data", JSON.stringify([]));
   }
+  if (!localStorage.getItem("ActiveTodo")) {
+    localStorage.setItem("ActiveTodo", "all");
+  }
   const activePost = localStorage.getItem("ActiveTodo");
   switch (activePost) {
     case "finish":
