@@ -11,7 +11,6 @@ const TodoItem = (props) => {
   const day = date.getDate();
   const hours = date.getHours();
   const minute = date.getMinutes();
-  alert(minute)
   const DayOfTheWeek = prindDayOfTheWeek(date.getDay());
 
   const dellitem = (e) => {
