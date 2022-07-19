@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="779be458-52a9-45c8-98a9-1c5729e59fac" name="Changes" comment="" />
+    <list default="true" id="779be458-52a9-45c8-98a9-1c5729e59fac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartAppComponent/BodyTodoContainer/BodyTodo/BodyTodo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartAppComponent/BodyTodoContainer/BodyTodo/BodyTodo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartAppComponent/BodyTodoContainer/BodyTodo/TodoItem/TodoItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartAppComponent/BodyTodoContainer/BodyTodo/TodoItem/TodoItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartAppComponent/BodyTodoContainer/BodyTodo/TodoItem/TodoItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartAppComponent/BodyTodoContainer/BodyTodo/TodoItem/TodoItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartAppComponent/BodyTodoContainer/BodyTodoContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartAppComponent/BodyTodoContainer/BodyTodoContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/LocalStore.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/LocalStore.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,18 +27,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/TodoReact&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\skillbox\\react\\ReactJS\\9\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/GitHub/TodoReact",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "D:\\skillbox\\react\\ReactJS\\9\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\TodoReact\src\util" />
@@ -103,7 +111,9 @@
       <workItem from="1657561381613" duration="6000" />
       <workItem from="1658043312324" duration="15000" />
       <workItem from="1658064222036" duration="2266000" />
-      <workItem from="1658066781551" duration="594000" />
+      <workItem from="1658066781551" duration="1198000" />
+      <workItem from="1658140011281" duration="3745000" />
+      <workItem from="1658225374153" duration="2651000" />
     </task>
     <servers />
   </component>

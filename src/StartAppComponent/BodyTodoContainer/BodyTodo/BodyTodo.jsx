@@ -10,6 +10,8 @@ const BodyTodo = (props) => {
       <TodoFormControl addTodo={props.addTodo} />
       {props.data &&
         props.data.map((el) => (
+
+
           <TodoItem
             changeDone={props.changeDone}
             key={el.id}
@@ -18,6 +20,7 @@ const BodyTodo = (props) => {
             success={el.done}
             dellTodo={props.dellTodo}
             timeCreate={el.timeCreate}
+            anim={el.anim}
           />
         ))}
     </div>

@@ -2,9 +2,17 @@ import GeneratorRandomString from "../util/generateRandomString";
 
 export const setTodoItem = (value) => {
   const localArray = JSON.parse(localStorage.getItem("data"));
+  localArray.forEach(el=>el.anim=false)
   localArray.unshift(createTodo(value));
   localStorage.setItem("data", JSON.stringify(localArray));
+  setTimeout(()=>{
+    const localArray = JSON.parse(localStorage.getItem("data"));
+    localArray.forEach(el=>el.anim=false)
+    localStorage.setItem("data", JSON.stringify(localArray));
+   },300
+  )
 };
+
 
 export const deleteTodo = (id) => {
   localStorage.setItem(
@@ -31,7 +39,8 @@ export const createTodo = (value) => {
     done: false,
     id: GeneratorRandomString(),
     status:"active",
-    timeCreate: new Date()
+    timeCreate: new Date(),
+    anim:true
   };
 };
 
@@ -47,3 +56,12 @@ export const getItemActive = () => {
   }
   return JSON.parse(localStorage.getItem("data"));
 };
+
+
+
+export const test=()=>{
+  const localArray = JSON.parse(localStorage.getItem("data"));
+  alert('dsf')
+  localArray.forEach(el=>el.anim=false)
+  localStorage.setItem("data", JSON.stringify(localArray));
+}

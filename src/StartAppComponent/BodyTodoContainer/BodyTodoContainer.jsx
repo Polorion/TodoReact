@@ -4,7 +4,7 @@ import {
   changeTodo,
   deleteTodo,
   getItem,
-  setTodoItem,
+  setTodoItem, test,
 } from "../../store/LocalStore";
 
 const BodyTodoContainer = () => {
@@ -23,9 +23,11 @@ const BodyTodoContainer = () => {
     changeTodo(id);
     setData(getItem());
   };
-  console.log(data)
 
-  useEffect(() => {}, [data]);
+  useEffect(() => {
+
+
+  }, [data]);
 
   return (
     <>

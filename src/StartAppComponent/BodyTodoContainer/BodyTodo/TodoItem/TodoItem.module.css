@@ -6,6 +6,12 @@
   border: 2px solid black;
   justify-content: space-between;
   border-radius: 15px;
+
+}
+
+.animation {
+  position: relative;
+  animation: box 0.3s ease-in-out ;
 }
 
 .createTime {
@@ -23,6 +29,14 @@
 }
 .ok {
   border: 2px solid #c4ff00;
+
+}
+
+@keyframes box {
+  0% {top: -150px;
+  opacity: 0}
+  100% { top: 0;
+    opacity: 1}
 }
 
 .btnBody {

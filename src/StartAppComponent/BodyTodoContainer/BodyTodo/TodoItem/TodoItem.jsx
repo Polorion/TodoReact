@@ -23,7 +23,7 @@ const TodoItem = (props) => {
   };
   return (
     <>
-      <div className={`${props.success && S.ok} ${S.body}`}>
+      <div className={`${props.success && S.ok} ${S.body} ${props.anim && S.animation}`}>
         <div className={S.createTime}>
           {DayOfTheWeek} {day}-{month}-{appZero(year)} года ({hours}:
           {appZero(minute)})
